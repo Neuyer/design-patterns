@@ -1,10 +1,16 @@
 package com.neuyer.designpatterns.model;
 
 public class Battery {
-    private BatteryVoltage voltage = BatteryVoltage.STANDARD_VOLTAGE;
+    private BatteryVoltage voltage;
     private BatterySize size;
 
+
+    public Battery(BatteryVoltage voltage) {
+        this.voltage = voltage;
+    }
+
     public Battery() {
+
     }
 
     public BatteryVoltage getVoltage() {

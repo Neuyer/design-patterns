@@ -3,13 +3,13 @@ package com.neuyer.designpatterns.model;
 public class RemoteController {
     private Battery battery;
 
-    public RemoteController(Battery battery) {
-        checkBattery(battery);
+    public RemoteController(TripleABattery battery) {
+        consumeEnergy(battery);
         this.battery = battery;
     }
 
-    public void setBattery(Battery battery) {
-        checkBattery(battery);
+    public void setBattery(TripleABattery battery) {
+        consumeEnergy(battery);
         this.battery = battery;
     }
 
@@ -17,7 +17,7 @@ public class RemoteController {
         return battery;
     }
 
-    public void checkBattery(Battery battery) {
-        if (battery.getSize() != BatterySize.SMALL) throw new RuntimeException("Wrong Battery");
+    public void consumeEnergy(Battery battery) {
+        if (battery.getVoltage() != BatteryVoltage.STANDARD_VOLTAGE) throw new RuntimeException("Wrong Voltage");
     }
 }
