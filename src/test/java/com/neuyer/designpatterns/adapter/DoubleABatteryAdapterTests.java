@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 public class DoubleABatteryAdapterTests {
 
     @Test
-    public void shouldAdaptBattery() {
+    public void shouldAdaptBatteryTest() {
         DoubleABattery doubleABattery = new DoubleABattery(BatteryVoltage.STANDARD_VOLTAGE);
         DoubleABatteryAdapter adapter = new DoubleABatteryAdapter(doubleABattery);
         RemoteController remoteController = new RemoteController(adapter);
@@ -20,7 +20,7 @@ public class DoubleABatteryAdapterTests {
     }
 
     @Test
-    public void shouldThrowException() {
+    public void shouldThrowExceptionTest() {
         Assertions.assertThrows(RuntimeException.class, () -> {
             DoubleABattery battery = new DoubleABattery(BatteryVoltage.HiGH_VOLTAGE);
             DoubleABatteryAdapter adapter = new DoubleABatteryAdapter(battery);
