@@ -1,4 +1,4 @@
-package com.neuyer.designpatterns.model;
+package com.neuyer.designpatterns.adapter.model;
 
 public enum BatteryVoltage {
     STANDARD_VOLTAGE(1.5),

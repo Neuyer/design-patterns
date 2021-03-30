@@ -1,4 +1,4 @@
-package com.neuyer.designpatterns.model;
+package com.neuyer.designpatterns.adapter.model;
 
 public class TripleABattery extends Battery {
 

@@ -1,8 +1,8 @@
 package com.neuyer.designpatterns.adapter;
 
-import com.neuyer.designpatterns.model.BatteryVoltage;
-import com.neuyer.designpatterns.model.TripleABattery;
-import com.neuyer.designpatterns.model.DoubleABattery;
+import com.neuyer.designpatterns.adapter.model.BatteryVoltage;
+import com.neuyer.designpatterns.adapter.model.TripleABattery;
+import com.neuyer.designpatterns.adapter.model.DoubleABattery;
 
 public class DoubleABatteryAdapter extends TripleABattery {
 

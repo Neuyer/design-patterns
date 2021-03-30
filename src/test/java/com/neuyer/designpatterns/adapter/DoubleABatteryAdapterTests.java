@@ -1,9 +1,9 @@
 package com.neuyer.designpatterns.adapter;
 
-import com.neuyer.designpatterns.model.DoubleABattery;
-import com.neuyer.designpatterns.model.BatterySize;
-import com.neuyer.designpatterns.model.BatteryVoltage;
-import com.neuyer.designpatterns.model.RemoteController;
+import com.neuyer.designpatterns.adapter.model.DoubleABattery;
+import com.neuyer.designpatterns.adapter.model.BatterySize;
+import com.neuyer.designpatterns.adapter.model.BatteryVoltage;
+import com.neuyer.designpatterns.adapter.model.RemoteController;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
