@@ -1,6 +1,7 @@
 package com.neuyer.designpatterns.composite;
 
 import com.neuyer.designpatterns.composite.model.Phone;
+import com.neuyer.designpatterns.composite.model.Product;
 import com.neuyer.designpatterns.composite.model.Tv;
 import com.neuyer.designpatterns.composite.model.VideoGame;
 import org.junit.jupiter.api.Assertions;
@@ -19,7 +20,8 @@ public class CompositeTests {
         composite.addComponent(new VideoGame(1, 15.0));
         composite.addComponent(new VideoGame(1, 15.0));
         composite.addComponent(new VideoGame(2, 15.0));
+        composite.addComponent(new Product(2, 100.0));
 
-        Assertions.assertEquals(860.00, composite.calcCost());
+        Assertions.assertEquals(1060.00, composite.calcCost());
     }
 }
